@@ -1,0 +1,19 @@
+<div class="sidebar">
+    <div>
+        <h3>Привет,
+            <?php echo $_SESSION['user_login'];?>!</h3>
+    </div>
+    <?php 
+        if( $_SESSION['rank'] == 'A' )
+            echo '
+            <div>
+                <a href="editusers.php">Управление пользователями</a>
+            </div>
+            <div>
+                <a href="editposts.php">Управление страницами</a>
+            </div>'
+    ?>
+    <div>
+        <a href="logic/logout.php">Выйти</a>
+    </div>
+</div>

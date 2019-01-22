@@ -1,0 +1,14 @@
+<form class="load_post" enctype="multipart/form-data" method="post">
+    <div>
+        <input name="picture" type="file" />
+    </div>
+    <div>
+        <label for="title">Заголовок</label>
+        <input name="title" required="required" type="text" placeholder="Введите Заголовок" maxlength="100" size="100" />
+    </div>
+    <div>
+        <label for="description">Описание</label>
+        <textarea name="description" required="required"></textarea>
+    </div>
+    <button id="load" name="load" type="submit">Загрузить</button>
+</form>

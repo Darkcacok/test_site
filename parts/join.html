@@ -1,0 +1,33 @@
+<div id="join">
+        <form id="createuser" method="POST">
+            <h1>Регистрация</h1>
+            <div class="field">
+                <label for="login">Логин</label>
+                <input name="login" required="required" type="text" placeholder="Введите логин" />
+            </div>
+            <div class="field">
+                <label>Пол</label>
+                <div>
+                    <input id="male" name="gender" type="radio" value="M" required>Мужской
+                    <input id="female" name="gender" type="radio" value="F">Женский
+                </div>
+            </div>
+            <div class="field">
+                <label for="email">E-mail</label>
+                <input name="email" required="required" type="email" placeholder="email@mail.com" />
+    
+            </div>
+            <div class="field">
+                <label for="passwd">Пароль </label>
+                <input name="passwd" required="required" type="password" placeholder="123456" />
+            </div>
+            <div class="field">
+                <label for="passwd_confirm">Подтвердите ваш пароль </label>
+                <input name="passwd_confirm" required="required" type="password" placeholder="123456" />
+            </div>
+            <div class="field">
+                <button id="signup" name="signup" type="submit">Зарегистрироваться</button>
+            </div>
+    
+        </form>
+    </div>

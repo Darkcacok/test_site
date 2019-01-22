@@ -1,0 +1,26 @@
+/* Создание базы данных */
+CREATE DATABASE site;
+
+/* Создание таблицы юзеры*/
+CREATE TABLE `users` (
+`id` int(11) NOT NULL auto_increment,
+`email` varchar(32) collate utf8_unicode_ci NOT NULL default '',
+`username` varchar(20) collate utf8_unicode_ci NOT NULL default '',
+`password` varchar(255) collate utf8_unicode_ci NOT NULL default '',
+`gender` char(1) collate utf8_unicode_ci NOT NULL default '',
+`rank` char(1) collate utf8_unicode_ci NOT NULL default 'U',
+PRIMARY KEY  (`id`),
+UNIQUE KEY `username` (`username`),
+UNIQUE KEY `email` (`email`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+/*Создание таблицы посты*/
+
+Create TABLE `posts` (
+    `id` int(11) NOT NULL auto_increment,
+    `path` varchar(100) collate utf8_unicode_ci NOT NULL,
+    `title` varchar(100) collate utf8_unicode_ci NOT NULL,
+    `text` text collate utf8_unicode_ci NOT NULL,
+    PRIMARY KEY  (`id`),
+    UNIQUE KEY `path` (`path`),
+)
